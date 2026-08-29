@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Great Locals — hyperlocal deals, guides and stories</title>
+<meta name="description" content="Great Locals covers your area, and only your area. Deals, guides and stories from real local businesses across Harrow Weald, Harrow on the Hill, Pinner, Hatch End, Bushey and Stanmore.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://greatlocals.co.uk/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .pickhero{padding:100px 0 60px;text-align:center;}
+  .pickhero .eyebrow{display:block;margin-bottom:16px;}
+  .pickhero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:0 0 18px;color:var(--green-950);}
+  .pickhero p{color:var(--ink-soft);max-width:52ch;margin:0 auto;font-size:1.08rem;}
+  .arealist{max-width:640px;margin:50px auto 0;display:flex;flex-direction:column;gap:14px;}
+  .area-row{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    background:var(--paper-card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 26px;text-decoration:none;color:var(--ink);
+  }
+  .area-row.live:hover{border-color:var(--green-900);}
+  .area-row .name{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;}
+  .area-row .status{font-family:'JetBrains Mono',monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;}
+  .area-row.live .status{color:var(--green-900);}
+  .area-row.soon{opacity:.55;cursor:default;}
+  .area-row.soon .status{color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span><span class="brand-label">Great Locals</span></a>
+    <div class="navlinks" id="nav-links">
+      <a href="harrow-weald/index.html">Areas</a>
+      <a href="media/index.html">For businesses</a>
+    </div>
+    <div class="navright">
+      <a href="harrow-weald/index.html#subscribe" class="navcta">Weekly deals</a>
+      <button class="navtoggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="pickhero">
+    <div class="wrap">
+      <span class="eyebrow">Local media, done properly</span>
+      <h1>One noticeboard, run separately for every area we cover.</h1>
+      <p>Great Locals never mixes towns together. Pick your area below for deals, guides and stories written by people who actually live there.</p>
+
+      <div class="arealist reveal">
+        <a href="harrow-weald/index.html" class="area-row live">
+          <span class="name">Harrow Weald</span>
+          <span class="status">Live →</span>
+        </a>
+        <a href="harrow-on-the-hill/index.html" class="area-row live">
+          <span class="name">Harrow on the Hill</span>
+          <span class="status">Live →</span>
+        </a>
+        <a href="pinner/index.html" class="area-row live">
+          <span class="name">Pinner</span>
+          <span class="status">Live →</span>
+        </a>
+        <a href="hatch-end/index.html" class="area-row live">
+          <span class="name">Hatch End</span>
+          <span class="status">Live →</span>
+        </a>
+        <a href="bushey/index.html" class="area-row live">
+          <span class="name">Bushey</span>
+          <span class="status">Live →</span>
+        </a>
+        <a href="stanmore/index.html" class="area-row live">
+          <span class="name">Stanmore</span>
+          <span class="status">Live →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© 2026 Great Locals.</span>
+      <span>Privacy · Terms</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
